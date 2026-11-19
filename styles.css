@@ -9,7 +9,7 @@
   --accent: #bcf5a5;
   --accent-bright: #d3fac3;
   --border: #2b3a30;
-  --sans: Inter, 'Segoe UI', system-ui, sans-serif;
+  --sans: 'Segoe UI', system-ui, sans-serif;
   --mono: 'Cascadia Mono', Consolas, 'Liberation Mono', monospace;
   background: var(--background);
   color: var(--text);
