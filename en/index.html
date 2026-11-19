@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080f20">
+  <meta name="description" content="Pavel Govorushchenko, Fucjetc. Applied machine learning, Python projects, and live Telegram bots.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fucjetc · Pavel Govorushchenko">
+  <meta property="og:description" content="Applied ML, Python projects, and Telegram bots by Pavel Govorushchenko.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:url" content="https://mrferruml.github.io/en/">
+  <meta property="og:image" content="https://mrferruml.github.io/assets/fucjetc-hero.webp">
+  <link rel="canonical" href="https://mrferruml.github.io/en/">
+  <link rel="alternate" hreflang="ru" href="https://mrferruml.github.io/">
+  <link rel="alternate" hreflang="en" href="https://mrferruml.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://mrferruml.github.io/">
+  <link rel="icon" type="image/png" href="../assets/favicon.png?v=fucjetc">
+  <script src="../theme.js"></script>
+  <link rel="stylesheet" href="../styles.css?v=themes">
+  <title>Fucjetc · Pavel Govorushchenko · Applied ML and Python</title>
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top"><span class="mark" aria-hidden="true">FJ</span><span>Fucjetc</span></a>
+      <nav aria-label="Portfolio sections">
+        <a href="#projects">Projects</a>
+        <a href="#bots">Bots</a>
+        <a href="#about">About me</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="locale-link" href="../" hreflang="ru" lang="ru" aria-label="RU — Русская версия">RU</a>
+        <button class="theme-toggle" type="button" data-theme-toggle hidden><span class="theme-icon" aria-hidden="true"></span><span class="theme-label" data-theme-label data-light="Light theme" data-dark="Dark theme">Light theme</span></button>
+        <a class="header-github" href="https://github.com/MrFerrumL">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" aria-labelledby="name">
+      <div class="shell hero-inner">
+        <div class="hero-visual" aria-hidden="true">
+          <img src="../assets/fucjetc-hero.webp" width="1536" height="1024" alt="" fetchpriority="high">
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Applied ML and Python</p>
+          <h1 id="name">Pavel <span>Govorushchenko</span></h1>
+          <p class="hero-lead">I use ML for search and forecasting and integrate models into Python applications.</p>
+          <div class="actions">
+            <a class="button button-primary" href="#projects">View projects</a>
+            <a class="button button-subtle" href="https://t.me/Fucject">Message me on Telegram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <h2 id="projects-title">Featured projects</h2>
+        <a class="text-link" href="https://github.com/MrFerrumL?tab=repositories">All repositories</a>
+      </div>
+
+      <article class="feature panel">
+        <div class="feature-copy">
+          <p class="eyebrow">EdTech · Semantic search</p>
+          <h3>Infocode</h3>
+          <p>A platform for preparing for Russia’s Unified State Exam in computer science and physics. Students solve problems and take courses. Teachers assign tests and track progress.</p>
+          <p>The recommendation system finds related problems by ranking their statements using cosine similarity between embeddings. The <code>multilingual-e5-small</code> model runs locally with ONNX Runtime, and embeddings update in the background.</p>
+          <div class="project-links">
+            <a class="button button-primary" href="https://infocode1.ru/">Visit website</a>
+            <a class="text-link" href="https://github.com/MrFerrumL/infocode/blob/main/docs/CASE_STUDY.md">Technical case study</a>
+          </div>
+        </div>
+        <figure class="feature-media">
+          <img src="../assets/infocode.webp" width="1440" height="900" loading="lazy" decoding="async" alt="Infocode’s problem library with filters and a sample exam question">
+        </figure>
+      </article>
+
+      <div class="case-grid">
+        <article class="case panel">
+          <p class="eyebrow">ML experiment · Classification</p>
+          <h3>Smart Credit Dashboard</h3>
+          <p>I added a logistic regression risk model to a hackathon prototype. I selected the threshold on the validation set, exported the model weights to JSON, and exposed predictions through an API for analysts.</p>
+          <div class="benchmark" aria-label="ROC AUC on held-out synthetic data">
+            <div><strong>0.784</strong><span>Model ROC AUC</span></div>
+            <div><strong>0.500</strong><span>Baseline ROC AUC</span></div>
+            <p>Held-out synthetic data</p>
+          </div>
+          <div class="project-links card-links">
+            <a class="text-link" href="https://github.com/MrFerrumL/alpha-smart-credit-cabinet">Repository</a>
+            <a class="text-link" href="https://github.com/MrFerrumL/alpha-smart-credit-cabinet/blob/main/docs/ml-model-card.md">Model card</a>
+          </div>
+        </article>
+
+        <article class="case panel">
+          <p class="eyebrow">Pochtatech · Team hackathon</p>
+          <h3>PostCode Challenge</h3>
+          <p>The planner builds a quarterly schedule from an Excel file. It accounts for team skills and task dependencies and explains why tasks were rescheduled.</p>
+          <div class="case-detail">
+            <strong>6 sprints over 12 weeks</strong>
+            <p>An experiment with Ridge regression forecasts completed story points. We use MAE on later observations to compare the forecasts with a baseline based on the team’s historical average.</p>
+          </div>
+          <div class="project-links card-links">
+            <a class="text-link" href="https://github.com/MrFerrumL/postcode-challenge">Repository</a>
+            <a class="text-link" href="https://github.com/MrFerrumL/postcode-challenge/blob/main/app/ml.py">Forecasting code</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="other-projects">
+        <h3>Other projects</h3>
+        <ul class="work-list">
+          <li><a href="https://github.com/MrFerrumL/ND_prod_ML_sber"><strong>Real Estate Price Prediction</strong><span>Linear regression, Ridge, and Lasso with hyperparameter tuning and RMSE evaluation.</span><span class="work-type">scikit-learn</span></a></li>
+          <li><a href="https://github.com/MrFerrumL/Project_AI_test"><strong>Bike-Sharing Data</strong><span>Data preparation, time-based feature engineering, and categorical encoding.</span><span class="work-type">pandas · NumPy</span></a></li>
+          <li><a href="https://github.com/MrFerrumL/claude-vpn-guard"><strong>Claude VPN Guard</strong><span>A Windows utility that monitors the VPN connection while Claude Desktop is running.</span><span class="work-type">C# · WinForms</span></a></li>
+          <li><a href="https://github.com/MrFerrumL/TT_bot_downloader"><strong>TT Bot Downloader</strong><span>A Telegram bot that handles video links and lets users choose the video quality.</span><span class="work-type">aiogram · yt-dlp</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section shell bots-section" id="bots" aria-labelledby="bots-title">
+      <div class="section-heading">
+        <h2 id="bots-title">My Telegram bots</h2>
+      </div>
+      <div class="bot-grid">
+        <article class="bot-card panel">
+          <p class="eyebrow">@caled_bot_ai</p>
+          <h3>Calendar</h3>
+          <p>A study calendar for schedules, tasks, and reminders.</p>
+          <a class="button button-subtle" href="https://t.me/caled_bot_ai" aria-label="Open Calendar in Telegram">Open in Telegram</a>
+        </article>
+        <article class="bot-card panel">
+          <p class="eyebrow">@fasten_app</p>
+          <h3>Fasten VPN</h3>
+          <p>A VPN service you can manage through Telegram.</p>
+          <a class="button button-subtle" href="https://t.me/fasten_app" aria-label="Open Fasten VPN in Telegram">Open in Telegram</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="shell about-grid">
+        <div class="about-copy">
+          <h2 id="about-title">About me</h2>
+          <div class="about-profile">
+            <img class="portrait" src="../assets/pavel-portrait.webp" width="640" height="640" loading="lazy" decoding="async" alt="Pavel Govorushchenko">
+            <div class="about-narrative">
+              <p>I study at Kuban State University’s Faculty of Computer Technologies and Applied Mathematics. My degree program is Mathematical Support and Administration of Information Systems, with a focus on Artificial Intelligence and Data Analytics.</p>
+              <p>I teach computer science and help students prepare for the Unified State Exam. That experience helps me choose problems for Infocode and understand what tools teachers need.</p>
+              <p>As a freelancer, I worked on APIs, microservices, and Telegram bots in Python. In machine learning, I’m especially interested in taking a model from testing a hypothesis to running it in an application.</p>
+            </div>
+          </div>
+          <ul class="technology" aria-label="Tools">
+            <li>Python</li><li>scikit-learn</li><li>pandas</li><li>ONNX</li><li>Django</li><li>FastAPI</li><li>PostgreSQL</li><li>Docker</li>
+          </ul>
+        </div>
+        <div class="achievements">
+          <h3>Competitions and forums</h3>
+          <ul>
+            <li><strong>1st place at Code of Sport</strong><span>T-Education · Team Algosy</span></li>
+            <li><strong>PostCode Challenge</strong><span>Pochtatech · Team AI Players · Team planning</span></li>
+            <li><strong>AI Breakthrough youth track</strong><span>All-Russian AI Forum at Kuban State University · October 2026</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell contact-section" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Get in touch</h2>
+      <div class="actions">
+        <a class="button button-primary" href="https://t.me/Fucject">Telegram</a>
+        <a class="button button-subtle" href="https://github.com/MrFerrumL">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner"><span>Pavel Govorushchenko · Fucjetc</span><a href="#top">Back to top</a></div>
+  </footer>
+</body>
+</html>

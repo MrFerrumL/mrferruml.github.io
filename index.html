@@ -1,18 +1,24 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080f20">
   <meta name="description" content="Павел Говорущенко, Fucjetc. Прикладное машинное обучение, Python-проекты и работающие Telegram-боты.">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:title" content="Fucjetc · Павел Говорущенко">
   <meta property="og:description" content="Прикладной ML, проекты на Python и Telegram-боты Павла Говорущенко.">
   <meta property="og:url" content="https://mrferruml.github.io/">
   <meta property="og:image" content="https://mrferruml.github.io/assets/fucjetc-hero.webp">
   <link rel="canonical" href="https://mrferruml.github.io/">
+  <link rel="alternate" hreflang="ru" href="https://mrferruml.github.io/">
+  <link rel="alternate" hreflang="en" href="https://mrferruml.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://mrferruml.github.io/">
   <link rel="icon" type="image/png" href="assets/favicon.png?v=fucjetc">
-  <link rel="stylesheet" href="styles.css?v=fucjetc">
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css?v=themes">
   <title>Fucjetc · Павел Говорущенко · Прикладной ML и Python</title>
 </head>
 <body id="top">
@@ -26,7 +32,14 @@
         <a href="#about">Обо мне</a>
         <a href="#contact">Контакты</a>
       </nav>
-      <a class="header-github" href="https://github.com/MrFerrumL">GitHub</a>
+      <div class="header-actions">
+        <a class="locale-link" href="en/" hreflang="en" lang="en" aria-label="EN — English version">EN</a>
+        <button class="theme-toggle" type="button" data-theme-toggle hidden>
+          <span class="theme-icon" aria-hidden="true"></span>
+          <span class="theme-label" data-theme-label data-light="Светлая тема" data-dark="Тёмная тема">Светлая тема</span>
+        </button>
+        <a class="header-github" href="https://github.com/MrFerrumL">GitHub</a>
+      </div>
     </div>
   </header>
 
