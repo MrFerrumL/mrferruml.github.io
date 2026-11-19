@@ -3,25 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b100e">
-  <meta name="description" content="Павел Говорущенко. Портфолио по прикладному машинному обучению и Python-разработке. Проекты, результаты экспериментов и контакты.">
+  <meta name="theme-color" content="#080f20">
+  <meta name="description" content="Павел Говорущенко, Fucjetc. Прикладное машинное обучение, Python-проекты и работающие Telegram-боты.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Павел Говорущенко · Прикладной ML и Python">
-  <meta property="og:description" content="Семантический поиск в Инфокоде, модели на табличных данных и веб-сервисы на Python.">
+  <meta property="og:title" content="Fucjetc · Павел Говорущенко">
+  <meta property="og:description" content="Прикладной ML, проекты на Python и Telegram-боты Павла Говорущенко.">
   <meta property="og:url" content="https://mrferruml.github.io/">
-  <meta property="og:image" content="https://mrferruml.github.io/assets/ferrum-hero.webp">
+  <meta property="og:image" content="https://mrferruml.github.io/assets/fucjetc-hero.webp">
   <link rel="canonical" href="https://mrferruml.github.io/">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="stylesheet" href="styles.css">
-  <title>Павел Говорущенко · Прикладной ML и Python</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png?v=fucjetc">
+  <link rel="stylesheet" href="styles.css?v=fucjetc">
+  <title>Fucjetc · Павел Говорущенко · Прикладной ML и Python</title>
 </head>
 <body id="top">
   <a class="skip-link" href="#content">К содержанию</a>
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="wordmark" href="#top"><span class="mark" aria-hidden="true">Fe</span><span>MrFerrumL</span></a>
+      <a class="wordmark" href="#top"><span class="mark" aria-hidden="true">FJ</span><span>Fucjetc</span></a>
       <nav aria-label="Разделы портфолио">
         <a href="#projects">Проекты</a>
+        <a href="#bots">Боты</a>
         <a href="#about">Обо мне</a>
         <a href="#contact">Контакты</a>
       </nav>
@@ -33,7 +34,7 @@
     <section class="hero" aria-labelledby="name">
       <div class="shell hero-inner">
         <div class="hero-visual" aria-hidden="true">
-          <img src="assets/ferrum-hero.webp" width="1536" height="1024" alt="" fetchpriority="high">
+          <img src="assets/fucjetc-hero.webp" width="1536" height="1024" alt="" fetchpriority="high">
         </div>
         <div class="hero-copy">
           <p class="eyebrow">Прикладной ML и Python</p>
@@ -111,13 +112,38 @@
       </div>
     </section>
 
+    <section class="section shell bots-section" id="bots" aria-labelledby="bots-title">
+      <div class="section-heading">
+        <h2 id="bots-title">Мои Telegram-боты</h2>
+      </div>
+      <div class="bot-grid">
+        <article class="bot-card panel">
+          <p class="eyebrow">@caled_bot_ai</p>
+          <h3>Calendar</h3>
+          <p>Календарь для учёбы с расписанием, задачами и напоминаниями.</p>
+          <a class="button button-subtle" href="https://t.me/caled_bot_ai" aria-label="Открыть Calendar в Telegram">Открыть в Telegram</a>
+        </article>
+        <article class="bot-card panel">
+          <p class="eyebrow">@fasten_app</p>
+          <h3>Fasten VPN</h3>
+          <p>VPN-сервис, которым можно управлять через Telegram.</p>
+          <a class="button button-subtle" href="https://t.me/fasten_app" aria-label="Открыть Fasten VPN в Telegram">Открыть в Telegram</a>
+        </article>
+      </div>
+    </section>
+
     <section class="section about-section" id="about" aria-labelledby="about-title">
       <div class="shell about-grid">
         <div class="about-copy">
           <h2 id="about-title">Обо мне</h2>
-          <p>Учусь в КубГУ на факультете компьютерных технологий и прикладной математики. Направление — «Математическое обеспечение и администрирование информационных систем», профиль — «Искусственный интеллект и аналитика данных».</p>
-          <p>Преподаю информатику и готовлю учеников к ЕГЭ. Этот опыт помогает мне выбирать задачи для «Инфокода» и понимать, какие инструменты нужны преподавателю.</p>
-          <p>На фрилансе работал над API, микросервисами и Telegram-ботами на Python. В ML мне особенно интересен путь от проверки гипотезы до модели, работающей в приложении.</p>
+          <div class="about-profile">
+            <img class="portrait" src="assets/pavel-portrait.webp" width="640" height="640" loading="lazy" decoding="async" alt="Павел Говорущенко">
+            <div class="about-narrative">
+              <p>Учусь в КубГУ на факультете компьютерных технологий и прикладной математики. Направление — «Математическое обеспечение и администрирование информационных систем», профиль — «Искусственный интеллект и аналитика данных».</p>
+              <p>Преподаю информатику и готовлю учеников к ЕГЭ. Этот опыт помогает мне выбирать задачи для «Инфокода» и понимать, какие инструменты нужны преподавателю.</p>
+              <p>На фрилансе работал над API, микросервисами и Telegram-ботами на Python. В ML мне особенно интересен путь от проверки гипотезы до модели, работающей в приложении.</p>
+            </div>
+          </div>
           <ul class="technology" aria-label="Инструменты">
             <li>Python</li><li>scikit-learn</li><li>pandas</li><li>ONNX</li><li>Django</li><li>FastAPI</li><li>PostgreSQL</li><li>Docker</li>
           </ul>
@@ -143,7 +169,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-inner"><span>Павел Говорущенко</span><a href="#top">В начало</a></div>
+    <div class="shell footer-inner"><span>Павел Говорущенко · Fucjetc</span><a href="#top">В начало</a></div>
   </footer>
 </body>
 </html>
